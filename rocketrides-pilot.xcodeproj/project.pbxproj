@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2417DA19231EC3F8006906FE /* PickUpCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2417DA18231EC3F8006906FE /* PickUpCardViewController.swift */; };
+		2417DA1D231ED99A006906FE /* RideProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2417DA1C231ED99A006906FE /* RideProgressViewModel.swift */; };
+		24427FCD231982A40013DFD3 /* UIApplication+CurrentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24427FCC231982A40013DFD3 /* UIApplication+CurrentViewController.swift */; };
+		246593EB235668FF00850767 /* Pods_rocketrides_pilot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF380A0A59D6BEF4730E673 /* Pods_rocketrides_pilot.framework */; };
+		246593EC235668FF00850767 /* Pods_rocketrides_pilot.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8DF380A0A59D6BEF4730E673 /* Pods_rocketrides_pilot.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		246593EF23566A4D00850767 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246593EE23566A4D00850767 /* UIKit.framework */; };
+		246C08D523147D4000970E03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C08D423147D4000970E03 /* AppDelegate.swift */; };
+		246C08D723147D4000970E03 /* RRTerminalDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C08D623147D4000970E03 /* RRTerminalDelegate.swift */; };
+		246C08DC23147D4100970E03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 246C08DB23147D4100970E03 /* Assets.xcassets */; };
+		246C08DF23147D4100970E03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246C08DD23147D4100970E03 /* LaunchScreen.storyboard */; };
+		246C08E723148D4D00970E03 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C08E623148D4D00970E03 /* APIClient.swift */; };
+		24820A3A2315C95E004AB35E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24820A392315C95E004AB35E /* MapViewController.swift */; };
+		24820A3C2315CB5B004AB35E /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24820A3B2315CB5B004AB35E /* UIView+Layout.swift */; };
+		24820A3E2315E3CE004AB35E /* MapHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24820A3D2315E3CE004AB35E /* MapHeaderViewController.swift */; };
+		24820A402315E3E3004AB35E /* MapHeaderGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24820A3F2315E3E3004AB35E /* MapHeaderGradientView.swift */; };
+		24820A422315E3F6004AB35E /* MapCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24820A412315E3F5004AB35E /* MapCardViewController.swift */; };
+		24820A46231608C4004AB35E /* RideCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24820A45231608C4004AB35E /* RideCardViewController.swift */; };
+		24820A48231617EE004AB35E /* PayCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24820A47231617EE004AB35E /* PayCardViewController.swift */; };
+		24C5C7292318404100A3D36C /* ReaderConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C5C7282318404100A3D36C /* ReaderConnectionViewController.swift */; };
+		24E552B02316EDEA00EAF1EE /* PayCompleteCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E552AF2316EDEA00EAF1EE /* PayCompleteCardViewController.swift */; };
+		24E552B22317336500EAF1EE /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E552B12317336500EAF1EE /* Ride.swift */; };
+		24E552B42317441000EAF1EE /* RocketPathOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E552B32317441000EAF1EE /* RocketPathOverlay.swift */; };
+		24E8C9932333F0DD00E6DD63 /* CardAdvanceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E8C9922333F0DD00E6DD63 /* CardAdvanceButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		246593ED235668FF00850767 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				246593EC235668FF00850767 /* Pods_rocketrides_pilot.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2417DA18231EC3F8006906FE /* PickUpCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickUpCardViewController.swift; sourceTree = "<group>"; };
+		2417DA1C231ED99A006906FE /* RideProgressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideProgressViewModel.swift; sourceTree = "<group>"; };
+		24427FCC231982A40013DFD3 /* UIApplication+CurrentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+CurrentViewController.swift"; sourceTree = "<group>"; };
+		246593EE23566A4D00850767 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		246C08D123147D4000970E03 /* Rocket Rides Pilot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rocket Rides Pilot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		246C08D423147D4000970E03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		246C08D623147D4000970E03 /* RRTerminalDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRTerminalDelegate.swift; sourceTree = "<group>"; };
+		246C08DB23147D4100970E03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		246C08DE23147D4100970E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		246C08E023147D4100970E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		246C08E623148D4D00970E03 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		24820A392315C95E004AB35E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		24820A3B2315CB5B004AB35E /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		24820A3D2315E3CE004AB35E /* MapHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapHeaderViewController.swift; sourceTree = "<group>"; };
+		24820A3F2315E3E3004AB35E /* MapHeaderGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapHeaderGradientView.swift; sourceTree = "<group>"; };
+		24820A412315E3F5004AB35E /* MapCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCardViewController.swift; sourceTree = "<group>"; };
+		24820A45231608C4004AB35E /* RideCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideCardViewController.swift; sourceTree = "<group>"; };
+		24820A47231617EE004AB35E /* PayCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCardViewController.swift; sourceTree = "<group>"; };
+		24C5C7282318404100A3D36C /* ReaderConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderConnectionViewController.swift; sourceTree = "<group>"; };
+		24E552AF2316EDEA00EAF1EE /* PayCompleteCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayCompleteCardViewController.swift; sourceTree = "<group>"; };
+		24E552B12317336500EAF1EE /* Ride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
+		24E552B32317441000EAF1EE /* RocketPathOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketPathOverlay.swift; sourceTree = "<group>"; };
+		24E8C9922333F0DD00E6DD63 /* CardAdvanceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAdvanceButton.swift; sourceTree = "<group>"; };
+		4E38FA9B4B622DCFB0B07BA4 /* Pods-rocketrides-pilot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rocketrides-pilot.release.xcconfig"; path = "Target Support Files/Pods-rocketrides-pilot/Pods-rocketrides-pilot.release.xcconfig"; sourceTree = "<group>"; };
+		8DF380A0A59D6BEF4730E673 /* Pods_rocketrides_pilot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rocketrides_pilot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30BF990B606522F3BBABDE5 /* Pods-rocketrides-pilot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rocketrides-pilot.debug.xcconfig"; path = "Target Support Files/Pods-rocketrides-pilot/Pods-rocketrides-pilot.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		246C08CE23147D4000970E03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246593EB235668FF00850767 /* Pods_rocketrides_pilot.framework in Frameworks */,
+				246593EF23566A4D00850767 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		242B11D923550D7A002EF08F /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				24820A3D2315E3CE004AB35E /* MapHeaderViewController.swift */,
+				24820A3F2315E3E3004AB35E /* MapHeaderGradientView.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		246C08C823147D4000970E03 = {
+			isa = PBXGroup;
+			children = (
+				8B87F906C44ABC7C55C28BB0 /* Frameworks */,
+				380CB6A05544F2458E786709 /* Pods */,
+				246C08D223147D4000970E03 /* Products */,
+				246C08D323147D4000970E03 /* rocketrides-pilot */,
+			);
+			sourceTree = "<group>";
+		};
+		246C08D223147D4000970E03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				246C08D123147D4000970E03 /* Rocket Rides Pilot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		246C08D323147D4000970E03 /* rocketrides-pilot */ = {
+			isa = PBXGroup;
+			children = (
+				246C08E623148D4D00970E03 /* APIClient.swift */,
+				246C08D423147D4000970E03 /* AppDelegate.swift */,
+				246C08DB23147D4100970E03 /* Assets.xcassets */,
+				246C08E023147D4100970E03 /* Info.plist */,
+				246C08DD23147D4100970E03 /* LaunchScreen.storyboard */,
+				24820A432315E3FF004AB35E /* MapView */,
+				24C5C7282318404100A3D36C /* ReaderConnectionViewController.swift */,
+				24E552B12317336500EAF1EE /* Ride.swift */,
+				2417DA1C231ED99A006906FE /* RideProgressViewModel.swift */,
+				246C08D623147D4000970E03 /* RRTerminalDelegate.swift */,
+				24427FCC231982A40013DFD3 /* UIApplication+CurrentViewController.swift */,
+				24820A3B2315CB5B004AB35E /* UIView+Layout.swift */,
+				24E8C9922333F0DD00E6DD63 /* CardAdvanceButton.swift */,
+			);
+			path = "rocketrides-pilot";
+			sourceTree = "<group>";
+		};
+		24820A432315E3FF004AB35E /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				242B11D923550D7A002EF08F /* Header */,
+				24820A4423160887004AB35E /* Cards */,
+				24820A392315C95E004AB35E /* MapViewController.swift */,
+				24820A412315E3F5004AB35E /* MapCardViewController.swift */,
+				24E552B32317441000EAF1EE /* RocketPathOverlay.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		24820A4423160887004AB35E /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				2417DA18231EC3F8006906FE /* PickUpCardViewController.swift */,
+				24820A45231608C4004AB35E /* RideCardViewController.swift */,
+				24820A47231617EE004AB35E /* PayCardViewController.swift */,
+				24E552AF2316EDEA00EAF1EE /* PayCompleteCardViewController.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		380CB6A05544F2458E786709 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C30BF990B606522F3BBABDE5 /* Pods-rocketrides-pilot.debug.xcconfig */,
+				4E38FA9B4B622DCFB0B07BA4 /* Pods-rocketrides-pilot.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8B87F906C44ABC7C55C28BB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				246593EE23566A4D00850767 /* UIKit.framework */,
+				8DF380A0A59D6BEF4730E673 /* Pods_rocketrides_pilot.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		246C08D023147D4000970E03 /* rocketrides-pilot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 246C08E323147D4100970E03 /* Build configuration list for PBXNativeTarget "rocketrides-pilot" */;
+			buildPhases = (
+				5AFB919FAF5AE4925623D771 /* [CP] Check Pods Manifest.lock */,
+				246C08CD23147D4000970E03 /* Sources */,
+				246C08CE23147D4000970E03 /* Frameworks */,
+				246C08CF23147D4000970E03 /* Resources */,
+				12A9DB298E027A8BC2C8DACF /* [CP] Embed Pods Frameworks */,
+				246593ED235668FF00850767 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "rocketrides-pilot";
+			productName = "rocketrides-pilot";
+			productReference = 246C08D123147D4000970E03 /* Rocket Rides Pilot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		246C08C923147D4000970E03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Stripe;
+				TargetAttributes = {
+					246C08D023147D4000970E03 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1110;
+					};
+				};
+			};
+			buildConfigurationList = 246C08CC23147D4000970E03 /* Build configuration list for PBXProject "rocketrides-pilot" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 246C08C823147D4000970E03;
+			productRefGroup = 246C08D223147D4000970E03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				246C08D023147D4000970E03 /* rocketrides-pilot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		246C08CF23147D4000970E03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246C08DF23147D4100970E03 /* LaunchScreen.storyboard in Resources */,
+				246C08DC23147D4100970E03 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12A9DB298E027A8BC2C8DACF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rocketrides-pilot/Pods-rocketrides-pilot-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rocketrides-pilot/Pods-rocketrides-pilot-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rocketrides-pilot/Pods-rocketrides-pilot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AFB919FAF5AE4925623D771 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rocketrides-pilot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		246C08CD23147D4000970E03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24820A3E2315E3CE004AB35E /* MapHeaderViewController.swift in Sources */,
+				246C08D723147D4000970E03 /* RRTerminalDelegate.swift in Sources */,
+				246C08D523147D4000970E03 /* AppDelegate.swift in Sources */,
+				2417DA1D231ED99A006906FE /* RideProgressViewModel.swift in Sources */,
+				24E8C9932333F0DD00E6DD63 /* CardAdvanceButton.swift in Sources */,
+				24C5C7292318404100A3D36C /* ReaderConnectionViewController.swift in Sources */,
+				24820A48231617EE004AB35E /* PayCardViewController.swift in Sources */,
+				24427FCD231982A40013DFD3 /* UIApplication+CurrentViewController.swift in Sources */,
+				24E552B02316EDEA00EAF1EE /* PayCompleteCardViewController.swift in Sources */,
+				24E552B22317336500EAF1EE /* Ride.swift in Sources */,
+				24820A46231608C4004AB35E /* RideCardViewController.swift in Sources */,
+				24820A402315E3E3004AB35E /* MapHeaderGradientView.swift in Sources */,
+				246C08E723148D4D00970E03 /* APIClient.swift in Sources */,
+				24820A422315E3F6004AB35E /* MapCardViewController.swift in Sources */,
+				24820A3A2315C95E004AB35E /* MapViewController.swift in Sources */,
+				24E552B42317441000EAF1EE /* RocketPathOverlay.swift in Sources */,
+				2417DA19231EC3F8006906FE /* PickUpCardViewController.swift in Sources */,
+				24820A3C2315CB5B004AB35E /* UIView+Layout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		246C08DD23147D4100970E03 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				246C08DE23147D4100970E03 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		246C08E123147D4100970E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		246C08E223147D4100970E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		246C08E423147D4100970E03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C30BF990B606522F3BBABDE5 /* Pods-rocketrides-pilot.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y28TH9SHX7;
+				INFOPLIST_FILE = "rocketrides-pilot/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					/usr/lib/swift,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stripe.rocketrides-pilot$(SAMPLE_CODE_DISAMBIGUATOR)";
+				PRODUCT_NAME = "Rocket Rides Pilot";
+				SAMPLE_CODE_DISAMBIGUATOR = "$(DEVELOPMENT_TEAM)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		246C08E523147D4100970E03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E38FA9B4B622DCFB0B07BA4 /* Pods-rocketrides-pilot.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y28TH9SHX7;
+				INFOPLIST_FILE = "rocketrides-pilot/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					/usr/lib/swift,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stripe.rocketrides-pilot$(SAMPLE_CODE_DISAMBIGUATOR)";
+				PRODUCT_NAME = "Rocket Rides Pilot";
+				SAMPLE_CODE_DISAMBIGUATOR = "$(DEVELOPMENT_TEAM)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		246C08CC23147D4000970E03 /* Build configuration list for PBXProject "rocketrides-pilot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246C08E123147D4100970E03 /* Debug */,
+				246C08E223147D4100970E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		246C08E323147D4100970E03 /* Build configuration list for PBXNativeTarget "rocketrides-pilot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246C08E423147D4100970E03 /* Debug */,
+				246C08E523147D4100970E03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 246C08C923147D4000970E03 /* Project object */;
+}
