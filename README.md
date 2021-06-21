@@ -13,8 +13,6 @@ Features of the Rocket Rides Pilot app:
 - Manages the payment flow from start to end, giving operators the ability to retry a payment if some part of the payment fails.
 - Protects users from running into SDK errors, such as disconnecting the reader while collecting a payment or running multiple of the same operations at once.
 
-> [See a video of the Rocket Rides Pilot app working with a BBPOS Chipper 2X BT](https://drive.google.com/open?id=1uWTLair0A4S9yyXwBlLAvW-4IzSPo5fQ)
-
 ### Exploring the Code
 
 `RRTerminalDelegate.swift` is the main link between the Stripe Terminal iOS SDK and the app's UI. This singleton manages discovery state, connection state, and payment state, and implements the `DiscoveryDelegate` and `TerminalDelegate` protocols. The `RRTerminalDelegate` calls methods in `PayCardViewController.swift`, `MapHeaderViewController.swift`, and `ReaderConnectionViewController`, which are the UIViewControllers responsible for displaying payment state, connection state, and discovery state respectively.
@@ -22,8 +20,6 @@ Features of the Rocket Rides Pilot app:
 > Rocket Rides is a fake ridesharing platform built to demonstrate different parts of the [Stripe](https://stripe.com) payments stack. It is not a real product.
 >
 > You might also be looking for the rider app, which demoes Stripe Connect, Connect Express, and the Stripe iOS SDK. That's in a different repository: [see it here](https://github.com/stripe/stripe-connect-rocketrides).
-
-
 
 ## Build and Run
 
